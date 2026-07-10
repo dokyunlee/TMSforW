@@ -109,10 +109,10 @@ document.addEventListener("DOMContentLoaded", () => {
       reward: "1.20",
       timeLimitMinutes: "15",
       mediaFiles: objectMediaFiles,
-      description: `### <strong>어떤 작업인가요?</strong>
+      description: `### 어떤 작업인가요?
 이미지를 한 장씩 보고, 화면에서 가장 눈에 띄는 물건의 이름을 골라 주세요. 각 이미지에는 대표로 분류할 물건이나 장면이 하나씩 있습니다.
 
-### **이렇게 진행해 주세요**
+### 이렇게 진행해 주세요
 1. 이미지 중앙이나 가장 크게 보이는 물건을 먼저 살펴봐 주세요.
 2. 선택지에서 이미지와 가장 잘 맞는 이름을 골라 주세요.
 3. 물건이 여러 개 보이면 가장 중심이 되는 물건을 기준으로 선택해 주세요.
@@ -1483,8 +1483,12 @@ document.addEventListener("DOMContentLoaded", () => {
           .replace(/&/g, "&amp;")
           .replace(/</g, "&lt;")
           .replace(/>/g, "&gt;")
-          .replace(/^### (.*)\n/gim, '<span style="color: var(--color-teal); font-size: 1rem; display: block; margin-top: 0.55rem; margin-bottom: 0.15rem; font-family: \'Outfit\', sans-serif; font-weight: 400;">$1</span>')
-          .replace(/\*\*([^*]+)\*\*/g, '$1');
+          .replace(/^### (.*)$/gim,
+            '<div style="font-weight:700;font-size:1rem;color:var(--color-teal);margin-top:1rem;margin-bottom:0.5rem;">$1</div>')
+          .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+          .replace(/^(\d+)\.\s(.*)$/gm,
+            "<div style='margin-left:1rem;margin-bottom:0.35rem;'>$1. $2</div>")
+          .replace(/\n/g,"<br>");
         workerTaskDesc.innerHTML = html;
       } else {
         workerTaskDesc.innerHTML = `<span style="color: var(--text-muted); font-style: italic;">게시된 상세 가이드라인이 존재하지 않습니다.</span>`;
