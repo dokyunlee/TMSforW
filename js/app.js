@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
       reward: "1.20",
       timeLimitMinutes: "15",
       mediaFiles: objectMediaFiles,
-      description: `### 어떤 작업인가요?
+      description: `### <strong>어떤 작업인가요?</strong>
 이미지를 한 장씩 보고, 화면에서 가장 눈에 띄는 물건의 이름을 골라 주세요. 각 이미지에는 대표로 분류할 물건이나 장면이 하나씩 있습니다.
 
 ### **이렇게 진행해 주세요**
