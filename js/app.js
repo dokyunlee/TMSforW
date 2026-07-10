@@ -104,15 +104,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // Overwrite default seed task to keep it fresh and perfectly matched
     const defaultTask = {
       id: "task-seed-101",
-      title: "생활 물건 이미지 분류 테스트",
+      title: "이미지 분류 작업",
       category: "objects",
       reward: "1.20",
       timeLimitMinutes: "12",
       mediaFiles: objectMediaFiles,
-      description: `### **어떤 작업인가요?**
+      description: `### 어떤 작업인가요?
 이미지를 한 장씩 보고, 화면에서 가장 눈에 띄는 물건의 이름을 골라 주세요. 각 이미지에는 대표로 분류할 물건이나 장면이 하나씩 있습니다.
 
-### **이렇게 진행해 주세요**
+### 이렇게 진행해 주세요
 1. 이미지 중앙이나 가장 크게 보이는 물건을 먼저 살펴봐 주세요.
 2. 선택지에서 이미지와 가장 잘 맞는 이름을 골라 주세요.
 3. 물건이 여러 개 보이면 가장 중심이 되는 물건을 기준으로 선택해 주세요.
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 여러분의 참여는 더 나은 AI 시스템을 만드는 데 큰 도움이 됩니다.`,
       afterText: "작업을 완료해 주셔서 진심으로 감사합니다. 작업자님께서 남겨주신 하나하나의 응답은 더 정확하고 신뢰할 수 있는 AI 시스템을 만드는 데 소중한 밑거름이 됩니다. 끝까지 작업에 참여해 주신 덕분에 이번 연구를 성공적으로 진행할 수 있었습니다. 여러분의 소중한 기여에 다시 한번 감사드립니다.",
-      theme: "생활 물건 이미지 분류 (Object Classification)",
+      theme: "이미지 분류 (Object Classification)",
       createdAt: new Date().toISOString(),
       riskLevel: "low",
       fatigueLevel: "medium",
@@ -290,7 +290,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const testCasePresets = {
     case1: {
       category: "objects",
-      title: "생활 물건 이미지 분류 테스트",
+      title: "이미지 분류 작업",
       reward: "1.20",
       timeLimitMinutes: "12",
       mediaFiles: objectMediaFiles,
@@ -1365,7 +1365,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const baseDatabase = [
       {
         "taskId": "task-seed-101",
-        "taskTitle": "생활 물건 이미지 분류 테스트",
+        "taskTitle": "이미지 분류 작업",
         "category": "objects",
         "reward": "1.20",
         "riskLevel": "low",
