@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "이미지 분류 작업",
       category: "objects",
       reward: "1.20",
-      timeLimitMinutes: "12",
+      timeLimitMinutes: "15",
       mediaFiles: objectMediaFiles,
       description: `### 어떤 작업인가요?
 이미지를 한 장씩 보고, 화면에서 가장 눈에 띄는 물건의 이름을 골라 주세요. 각 이미지에는 대표로 분류할 물건이나 장면이 하나씩 있습니다.
