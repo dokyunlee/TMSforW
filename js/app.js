@@ -1461,7 +1461,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/>/g, "&gt;")
       .split(/\n\s*\n/)
       .map(paragraph => paragraph
-        .replace(/\*\*([^*]+)\*\*/g, "$1")
+        .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
         .replace(/\n/g, "<br>"))
       .filter(Boolean)
       .map((paragraph, index, paragraphs) => `<p style="margin: 0${index < paragraphs.length - 1 ? " 0 0.65rem" : ""};">${paragraph}</p>`)
