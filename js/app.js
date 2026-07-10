@@ -86,7 +86,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ["office.jpg", "사무실"],
     ["window.jpg", "창문"],
     ["bus.jpg", "버스"],
-    ["abstract art.jpg", "추상화"],
     ["trashcan.jpg", "쓰레기통"],
     ["chess.jpg", "체스 말"],
     ["stool.jpg", "스툴"]
